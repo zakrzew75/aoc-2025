@@ -1,0 +1,17 @@
+{
+  "name": "aoc-2025",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "workspaces": [
+    "packages/day1",
+    "packages/day2",
+    "packages/day3"
+  ]
+}
