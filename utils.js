@@ -59,10 +59,38 @@ function range(from, to){
     return arr
 }
 
+/*
+Merge 2 ranges defined as 2 element arrays, return array of 2 element arrays with merged ranges
+Sample: for [2, 3], [4, 5] it returns [[2, 3], [4, 5]]
+        for [2, 5], [4, 7] it returns [[2, 7]]
+*/
+function mergeRanges([from1, to1], [from2, to2]){
+    if(to1 < from2){
+        return [[from1, to1], [from2, to2]]
+    }     
+    else if(from1 > to2){
+        return [[from2, to2], [from1, to1]]
+    }
+    else {
+        return [[Math.min(from1, from2),  Math.max(to1, to2)]]
+    }
+}
+
+/*
+Return coordinates of adjacent points.
+For a given x,y point returns an array od 2D arrays with coordinates of adjacent points
+*/
+function adjacentPoints(x, y){
+    return [[0, 1], [1, 1], [1, 0], [1, -1], [0, -1], [-1, -1], [-1, 0], [-1, 1]]
+        .map(([x0, y0]) => [x + x0, y + y0])
+}
+
 export {
     zip, 
     parseNumbers,
     diffs,
     factors,
-    range
+    range,
+    adjacentPoints,
+    mergeRanges
 }
