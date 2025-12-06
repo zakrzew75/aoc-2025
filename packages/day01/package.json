@@ -1,5 +1,5 @@
 {
-  "name": "day2",
+  "name": "day01",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
@@ -8,6 +8,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
+    "visualise": "node src/visualise.js",
     "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "vue": "^3.5.25"
   }
 }

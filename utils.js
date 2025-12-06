@@ -85,6 +85,16 @@ function adjacentPoints(x, y){
         .map(([x0, y0]) => [x + x0, y + y0])
 }
 
+/*
+Return transposed 2D array
+ */
+function transpose(array2D){
+    const w = array2D[0].length
+    const transposed = Array.from({length: w}, () => [])
+    array2D.forEach((row, i) => row.forEach((cell, j) => transposed[j].push(cell)))
+    return transposed
+}
+
 export {
     zip, 
     parseNumbers,
@@ -92,5 +102,6 @@ export {
     factors,
     range,
     adjacentPoints,
-    mergeRanges
+    mergeRanges,
+    transpose
 }

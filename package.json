@@ -10,10 +10,11 @@
     "test": "node --test"
   },
   "workspaces": [
-    "packages/day1",
-    "packages/day2",
-    "packages/day3",
-    "packages/day4",
-    "packages/day5"
+    "packages/day01",
+    "packages/day02",
+    "packages/day03",
+    "packages/day04",
+    "packages/day05",
+    "packages/day06"
   ]
 }
