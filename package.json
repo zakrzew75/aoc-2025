@@ -15,6 +15,8 @@
     "packages/day03",
     "packages/day04",
     "packages/day05",
-    "packages/day06"
+    "packages/day06",
+    "packages/day07",
+    "packages/day08"
   ]
 }
